@@ -162,11 +162,11 @@ function PatientDetail({ patient, rx, onRx }) {
           onClick={() =>
             setStatus(`Demo only: the prescription for ${patient.name} is kept on this page and not saved.`)
           }
-          className={`${btn.primary} h-[42px] px-4 text-sm!`}
+          className={`${btn.primarySm}`}
         >
           Save prescription
         </button>
-        <button type="button" onClick={send} className={`${btn.soft} h-[42px] px-4 text-sm!`}>
+        <button type="button" onClick={send} className={`${btn.softSm}`}>
           Send note
         </button>
       </div>

@@ -419,7 +419,7 @@ function TrainerCard({ state, trainer, booking, daysSince, onBook }: TrainerCard
           type="button"
           onClick={connected ? trainer.disconnect : trainer.pair}
           disabled={state.bleScanning}
-          className={`${btn.soft} h-10 px-5 text-sm!`}
+          className={`${btn.softSm}`}
         >
           {connected ? 'Disconnect trainer' : 'Pair Bluetooth trainer'}
         </button>

@@ -128,10 +128,22 @@ export function Segmented({ label, options, value, onChange }) {
   );
 }
 
+const BUTTON =
+  'inline-flex items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap disabled:opacity-60';
+// Each size sets its own height, padding and text. Adding a size class next to a btn string
+// doesn't work: which of two heights or font sizes wins depends on stylesheet order, not on the class list.
+const BUTTON_SIZE = { md: 'h-11 px-6 text-[15px]', sm: 'h-10 px-5 text-sm' };
+const BUTTON_TONE = {
+  primary: 'bg-brand-teal-deep hover:bg-brand-teal-ink text-white transition-colors',
+  soft: 'bg-white text-brand-teal-ink shadow-[inset_0_0_0_1px_var(--color-slate-200)] hover:shadow-[inset_0_0_0_1.5px_var(--color-brand-teal)] transition-shadow'
+};
+
+/** Button class strings: `primary` and `soft` at the default size, `primarySm` and `softSm` for secondary actions. */
 export const btn = {
-  primary:
-    'inline-flex items-center justify-center gap-2 h-11 px-6 rounded-full bg-brand-teal-deep hover:bg-brand-teal-ink text-white text-[15px] font-semibold whitespace-nowrap transition-colors disabled:opacity-60',
-  soft: 'inline-flex items-center justify-center gap-2 h-11 px-6 rounded-full bg-white text-brand-teal-ink text-[15px] font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_var(--color-slate-200)] hover:shadow-[inset_0_0_0_1.5px_var(--color-brand-teal)] transition-shadow disabled:opacity-60',
+  primary: `${BUTTON} ${BUTTON_SIZE.md} ${BUTTON_TONE.primary}`,
+  soft: `${BUTTON} ${BUTTON_SIZE.md} ${BUTTON_TONE.soft}`,
+  primarySm: `${BUTTON} ${BUTTON_SIZE.sm} ${BUTTON_TONE.primary}`,
+  softSm: `${BUTTON} ${BUTTON_SIZE.sm} ${BUTTON_TONE.soft}`,
   link: 'text-sm font-semibold text-brand-teal-ink hover:underline whitespace-nowrap'
 };
 
