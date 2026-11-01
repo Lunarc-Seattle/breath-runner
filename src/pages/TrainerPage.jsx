@@ -109,7 +109,7 @@ function DeviceCard({ state, trainer, lease }) {
           type="button"
           onClick={connected ? trainer.disconnect : trainer.pair}
           disabled={state.bleScanning}
-          className={`${btn.soft} mt-4 h-10 px-5 text-sm!`}
+          className={`${btn.softSm} mt-4`}
         >
           {connected ? 'Disconnect trainer' : 'Pair Bluetooth trainer'}
         </button>
@@ -138,7 +138,7 @@ function DeviceCard({ state, trainer, lease }) {
           <button
             type="button"
             onClick={() => setStatus('Extension requests are not connected in this demo, so nothing was sent.')}
-            className={`${btn.soft} mt-4 h-10 px-5 text-sm!`}
+            className={`${btn.softSm} mt-4`}
           >
             Ask to extend
           </button>
