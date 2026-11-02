@@ -13,6 +13,13 @@ Designed, illustrated and built by **Jie (Fia) Yin**.
 
 ![Breath Runner gameplay: on a long inhale the runner jumps the forest gap and glides through a line of coins](docs/media/level1-glide.gif)
 
+**Videos.** Click a picture to play it.
+
+| Gameplay · 1:02 | Web app tour · 2:08 |
+| --- | --- |
+| [![Gameplay video: one clean lap of each of the three levels, with the start card that names each breathing skill](docs/media/video-gameplay-poster.jpg)](docs/media/breath-runner-gameplay.mp4) | [![Web app tour video: Home, schedule, maps, progress, friends, trainer care, the care team view and the profile](docs/media/video-web-tour-poster.jpg)](docs/media/breath-runner-web-tour.mp4) |
+| One clean lap of Forest, Sunlit Canyon and Glacier Ridge, each after the start card that names its breathing skill. | Home, today's schedule, choosing a map, progress charts, friends ranking, trainer and hygiene booking, the care team's view, and the profile. |
+
 **Versions.** Every web release stays playable at its own URL, rebuilt from its git tag on each deploy (see [how](#engineering-highlights)):
 
 | Version | What changed | Play | Source |

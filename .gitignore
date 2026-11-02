@@ -8,6 +8,8 @@ server/data/
 *.MOV
 *.mp4
 *.MP4
+# ...except the README's showcase videos (each under 10 MB)
+!docs/media/*.mp4
 *.m4v
 *.webm
 dist/
